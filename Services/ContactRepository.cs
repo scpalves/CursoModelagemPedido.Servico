@@ -24,6 +24,11 @@ namespace CursoModelagemPedido.Servico.Services
             {
                 Id = 2,
                 Name = "Dan Roth"
+            },
+               new Contact
+            {
+                Id = 3,
+                Name = "Rui"
             }
         };
     }
