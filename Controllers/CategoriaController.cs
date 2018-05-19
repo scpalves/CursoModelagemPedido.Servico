@@ -9,22 +9,18 @@ using System.Web.Http;
 
 namespace CursoModelagemPedido.Servico.Controllers
 {
-
-    public class ContactController : ApiController
+    public class CategoriaController : ApiController
     {
-        private ContactRepository contactRepository;
+         private CategoriaRepository categoriaRepository;
 
-        public ContactController()
+         public CategoriaController()
         {
-            this.contactRepository = new ContactRepository();
+            this.categoriaRepository = new CategoriaRepository();
         }
-        public Contact[] Get()
+        public List<Categoria> Get()
         {
-            return contactRepository.GetAllContacts();
+            return categoriaRepository.listarContactos();
         }
 
-
-
-      
     }
 }
